@@ -72,7 +72,6 @@ In this task, you will create and deploy a Linux virtual machine using the porta
     | Authentication type | **password**  |
     | Username | `adminuser` |
     | password | `adminuser` |
-    | SSH Key Type | **RSA SSH Format** |
     | Public inbound ports |**None** |
 
     >Did you know [virtual machine sizes](https://learn.microsoft.com/azure/virtual-machines/sizes/overview) are categorized into different families and types, each optimized for specific purposes. For example, compute optimized VM sizes have a high CPU-to-memory ratio. Good for medium traffic web servers, network appliances, batch processes, and application servers.
