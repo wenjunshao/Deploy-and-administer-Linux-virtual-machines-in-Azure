@@ -28,7 +28,7 @@ Your organization is evaluating how to backup Azure virtual machines. Backup wil
 
 ## Job skills
 
-+ Skill 0: Create a virtual machine. 
++ Skill 0: Use the Azure portal to create a virtual machine. 
 + Skill 1: Create and configure a Recovery Services vault.
 + Skill 2: Configure Azure virtual machine-level backup.
 
