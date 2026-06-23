@@ -42,7 +42,7 @@ Your organization is evaluating how to backup Azure virtual machines. Backup wil
 
 ![Diagram of the lab 01 architecture](./media/lab01.png)
 
-## Skill 1: Use the Azure portal to create a virtual machine
+## Skill 0: Use the Azure portal to create a virtual machine
 
 In this task, you will create and deploy a Linux virtual machine using the portal. 
 
