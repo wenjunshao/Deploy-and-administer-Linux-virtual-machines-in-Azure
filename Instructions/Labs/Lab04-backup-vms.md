@@ -1,23 +1,10 @@
----
-lab:
-  title: 'Exercise 04: Back up Azure Linux virtual machines'
-  module: 'Guided Project: Deploy and administer Linux virtual machines'
-  description: Create a Linux virtual machine. 
-  duration: 30 minutes
-  level: 300
-  islab: true
-  primarytopics:
-    - Azure
-    - Virtual Machines
----
 
-# Exercise 04: Create Azure Linux virtual machines
+# Exercise 0: Create Azure Linux virtual machines
 
 ## Lab requirements    
 
 This lab requires an Azure subscription. Your subscription type may affect the availability of features in this lab. You may change the regions, but the steps were tested using the **West US 3** region.
 
-### Estimated timing: 30 minutes
 
 ## Job skills
 
@@ -40,9 +27,7 @@ In this task, you will create and deploy a Linux virtual machine using the porta
 
 1. Sign in to the Azure portal - `https://portal.azure.com`.
 
-    >In this first lab you will use the Azure portal to create the virtual machine. This will give you a good overview of the configuration settings. In a later lab you will use the Azure CLI to create a virtual machine. 
-
-1. **Cancel** the **Welcome to Microsoft Azure** splash screen. 
+    >In this first lab you will use the Azure portal to create the virtual machine. This will give you a good overview of the configuration settings. 
 
 1. Use the top search box to search for and select `Virtual machines`.
 
@@ -64,66 +49,18 @@ In this task, you will create and deploy a Linux virtual machine using the porta
     | Size | **Standard DS15 v2** (use **See all sizes** to view the CPU and memory) |
     | Authentication type | **password**  |
     | Username | `adminuser` |
-    | password | `adminuser` |
+    | password | `Adminuser&123` |
     | Public inbound ports |**None** |
 
     >Did you know [virtual machine sizes](https://learn.microsoft.com/azure/virtual-machines/sizes/overview) are categorized into different families and types, each optimized for specific purposes. For example, compute optimized VM sizes have a high CPU-to-memory ratio. Good for medium traffic web servers, network appliances, batch processes, and application servers.
-
-1. Click **Next: Disks >** , specify the following settings (leave others with their default values):
-
-    | Setting | Value |
-    | --- | --- |
-    | OS disk size | **Image default (30 GiB)** |
-    | OS disk type | **Premium SSD (locally redundant storage** |
-    | Delete with VM | **checked** (default) |
-    | Enable Ultra Disk compatibility | **Unchecked** |
-
-    >Notice you can add a data disk to the virtual machine. We will do this in a later exercise. 
-
-1. Click **Next: Networking >** and make a few changes. 
-
-    | Setting | Value |
-    | --- | --- |
-    | Delete public IP and NIC when VM is deleted | **Checked** |
-    | Load balancing options | **None** |
-
-
-1. Click **Next: Management >** and check the following settings (leave others with their default values):
-
-    | Setting | Value |
-    | --- | --- |
-    | Enable auto-shutdown | **unchecked** |
-    | Patch orchestration options | **Image default** |  
-
-    >Patch orchestration options allow you to control how patches will be applied to your virtual machine. 
-
-1. Click **Next: Monitoring >** and specify the following settings (leave others with their default values):
-
-    | Setting | Value |
-    | --- | --- |
-    | Boot diagnostics | **Disable** |
-
-    >We will review monitoring in another exercise. 
-
-1. Click **Next: Advanced >** and notice the **Custom data** textbox. This is where you would pass a cloud-init script, configuration file, or other data into the virtual machine while it is being provisioned. Do not make any changes.
 
 1. Click **Review + Create**.
 
 1. After the validation passes, click **Create**.
 
-1. When prompted, select **Download private key and create resource**. 
-
-    >If you receive a message, *Can not download private key*, just click the download button again. 
-
 1. Wait for the deployment to complete, then select **Go to resource**. This will take a couple of minutes. 
 
 1. From the **Overview** blade, ensure the virtual machine **Status** is **Running**. 
-
-**Check your learning.** 
- + Can you access the Azure portal?
- + Can you use the Azure portal to create a Linux virtual machine?
- + Can you select the correct the Linux image and virtual machine size?
-
 
 ## Skill 1: Create and configure a Recovery Services vault
 
