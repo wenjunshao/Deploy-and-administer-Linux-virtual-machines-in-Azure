@@ -2,29 +2,22 @@
 lab:
   title: 'Exercise 04: Back up Azure Linux virtual machines'
   module: 'Guided Project: Deploy and administer Linux virtual machines'
-  description: Create a Linux virtual machine and configure backups. 
+  description: Create a Linux virtual machine. 
   duration: 30 minutes
   level: 300
   islab: true
   primarytopics:
     - Azure
     - Virtual Machines
-    - Backup
 ---
 
-# Exercise 04: Back up Azure Linux virtual machines
+# Exercise 04: Create Azure Linux virtual machines
 
 ## Lab requirements    
 
-This lab requires an Azure virtual machine. If you don't have a virtual machine, there are instructions to create one. 
-
-This lab requires an Azure subscription. Your subscription type may affect the availability of features in this lab. You may change the regions, but the steps were tested using the **(US) East** region.
+This lab requires an Azure subscription. Your subscription type may affect the availability of features in this lab. You may change the regions, but the steps were tested using the **West US 3** region.
 
 ### Estimated timing: 30 minutes
-
-## Lab scenario
-
-Your organization is evaluating how to backup Azure virtual machines. Backup will protect the virtual machines from accidental or malicious data loss. You plan to explore using the Azure Backup Center.
 
 ## Job skills
 
@@ -63,7 +56,7 @@ In this task, you will create and deploy a Linux virtual machine using the porta
     | --- | --- |
     | Subscription | the name of your Azure subscription |
     | Resource group |  **RG1** (If necessary, click **Create new**) |
-    | Virtual machine names | `vm-test` |
+    | Virtual machine names | `vm-rg1` |
     | Region | **West US 3** |
     | Availability options | **No infrastructure redundancy required** |
     | Security type | **Standard** (review your other choices) |
@@ -159,29 +152,14 @@ In this task, you will create a Recovery Services vault.
 
 1. When the deployment is completed, click **Go to Resource**.
 
-1. In the **Protected items** section select **Backup items**. Notice the vault does not yet contain any backups. 
-
 **Check your learning**
  + Can you create and configure a Recovery Service vault?
  + Can you determine which protected items are in the vault?
-
-
-## Learn more with self-paced training
-
-+ [Introduction to Azure Backup](https://learn.microsoft.com/training/modules/intro-to-azure-backup/). Describe how the features of Azure Backup work to provide backup solutions for your needs.
-+ [Protect your virtual machines by using Azure Backup](https://learn.microsoft.com/training/modules/protect-virtual-machines-with-azure-backup/). Use Azure Backup to help protect on-premises servers, virtual machines, SQL Server, Azure file shares, and other workloads.
 
 ## Key takeaways
 
 Congratulations on completing the exercise. Here are the main takeaways:
 
 + A Recovery Services vault stores your backup data and minimizes management overhead.
-+ Azure Backup service provides simple, secure, and cost-effective solutions to back up and recover your data.
-+ Azure Backup can protect on-premises and cloud resources including virtual machines and file shares.
-
-
-
-
-
 
 
